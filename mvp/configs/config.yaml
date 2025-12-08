@@ -1,0 +1,16 @@
+market: "NSE"
+universe: "nifty_sample"
+start_date: "2015-01-01"
+end_date: "2025-12-01"
+data_source: "yfinance"
+output_dir: "mvp/data"
+tickers_file: "mvp/data/universe/nifty_sample.csv"
+
+model:
+  target_horizon_days: 1
+  top_k: 5
+
+alerts:
+  top_k: 5
+  risk_per_trade_pct: 1.0
+  stop_atr_multiplier: 2.0
